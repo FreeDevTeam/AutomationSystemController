@@ -1,0 +1,82 @@
+name: Trigger build of all BO Services
+
+on:
+  workflow_call:
+    inputs:
+      upload-artifact:
+        type: boolean
+        default: true
+
+jobs:
+  restart-bo-dolah:
+    name: restart-bo-dolah
+    runs-on: "ubuntu-20.04"
+    steps:
+      - name: Restart BoDolah
+        run: |
+          echo "BoDolah"
+      - name: cURL AxiosJS
+        # You may pin to the exact commit or the version.
+        # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
+        uses: indiesdev/curl@v1.1
+        with:
+          # The target url
+          url: "http://captain.boservice.out79.com/api/v2/user/apps/webhooks/triggerbuild?namespace=captain&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InRva2VuVmVyc2lvbiI6ImVhYzA1M2Y2LTVlZWItNDE5OC1hNmVkLWFhYzM4MGVhZjU1MyIsImFwcE5hbWUiOiJiby1kb2xhaC1zZXJ2ZXIiLCJuYW1lc3BhY2UiOiJjYXB0YWluIn0sImlhdCI6MTY4NTM2NjM3Mn0.LGdrVcUdmUh08NbcVN9NZOQB0FmRbPCwJ5651RFLZnY"
+          # The request method, basically one of GET, POST, PUT, PATCH
+          method: "POST" # optional, default is GET
+          # List of status codes to be accepted, else it is considerred to be failed
+      - name: Restart SuperTrade OPT
+        run: |
+          echo "Super Trade OPT"
+      - name: cURL AxiosJS
+        # You may pin to the exact commit or the version.
+        # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
+        uses: indiesdev/curl@v1.1
+        with:
+          # The target url
+          url: "http://captain.boservice.out79.com/api/v2/user/apps/webhooks/triggerbuild?namespace=captain&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InRva2VuVmVyc2lvbiI6ImM5ODQ4YTJhLWEwNjUtNGYyZi1hNTcyLTZmYTIyZWJmN2EwOCIsImFwcE5hbWUiOiJib2JpbmFuY2UtdHJhZGVvcHQtc2VydmVyIiwibmFtZXNwYWNlIjoiY2FwdGFpbiJ9LCJpYXQiOjE2NzgxODM2NDd9.CvO0DfznfFppkLhJj8Im6FpYaoal6y38TZLU3M3icgM"
+          # The request method, basically one of GET, POST, PUT, PATCH
+          method: "POST" # optional, default is GET
+          # List of status codes to be accepted, else it is considerred to be failed
+      - name: Restart FastTrade
+        run: |
+          echo "FastTrade"
+      - name: cURL AxiosJS
+        # You may pin to the exact commit or the version.
+        # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
+        uses: indiesdev/curl@v1.1
+        with:
+          # The target url
+          url: "http://captain.boservice.out79.com/api/v2/user/apps/webhooks/triggerbuild?namespace=captain&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InRva2VuVmVyc2lvbiI6IjI3NGYyOTNkLWIyOTctNDRhYS1iMDUwLWUyYmMyMDA4MjM2ZCIsImFwcE5hbWUiOiJib2ZvcmV4LWZhc3RyYWRlLXNlcnZlciIsIm5hbWVzcGFjZSI6ImNhcHRhaW4ifSwiaWF0IjoxNjgyMzE0OTc3fQ.Bkkdu022PK5NfexnfwBaPOBpCHmgYiCDRIXVMAMQ_yE"
+          # The request method, basically one of GET, POST, PUT, PATCH
+          method: "POST" # optional, default is GET
+          # List of status codes to be accepted, else it is considerred to be failed
+      - name: Restart SmartTradeX
+        run: |
+          echo "SmartTradeX"
+      - name: cURL AxiosJS
+        # You may pin to the exact commit or the version.
+        # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
+        uses: indiesdev/curl@v1.1
+        with:
+          # The target url
+          url: "http://captain.demo.bo-silo.com/api/v2/user/apps/webhooks/triggerbuild?namespace=captain&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InRva2VuVmVyc2lvbiI6IjRjODA0ZTgxLTIxNTctNGFlYi1hMGEyLTAzNGI4M2Q3MGY3YyIsImFwcE5hbWUiOiJiby1mb3JleC1zbWFydHRyYWRleC1jZG4iLCJuYW1lc3BhY2UiOiJjYXB0YWluIn0sImlhdCI6MTY3MzI4MTI5OH0.dJhpV55GnQ8yCKErAal15o46o7hkcTZE8Mxvf00K92Y"
+          # The request method, basically one of GET, POST, PUT, PATCH
+          method: "POST" # optional, default is GET
+          # List of status codes to be accepted, else it is considerred to be failed
+      - name: Restart FTMXTrade
+        run: |
+          echo "FTMXTrade"
+      - name: cURL AxiosJS
+        # You may pin to the exact commit or the version.
+        # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
+        uses: indiesdev/curl@v1.1
+        with:
+          # The target url
+          url: "https://captain.demo.bo-silo.com/api/v2/user/apps/webhooks/triggerbuild?namespace=captain&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InRva2VuVmVyc2lvbiI6IjY5YmE4MGU0LTQ2MzItNDNkNi04YjEzLTc2ZjgxY2Y2MTQ5MCIsImFwcE5hbWUiOiJib2JpbmFuY2UtZnRteHRyYWRlLXNlcnZlciIsIm5hbWVzcGFjZSI6ImNhcHRhaW4ifSwiaWF0IjoxNjY4NDA5Mzg4fQ.20B7lsWxOdtoaGKaWvl8ly5wEbLBS1-Jwk2rxWA_UV8"
+          # The request method, basically one of GET, POST, PUT, PATCH
+          method: "POST" # optional, default is GET
+          # List of status codes to be accepted, else it is considerred to be failed
+          
+         
+          
