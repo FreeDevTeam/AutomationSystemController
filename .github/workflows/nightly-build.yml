@@ -3,7 +3,7 @@ name: Automation Nightly Reset
 on:
   schedule:
     # schedule build every night
-    - cron: "0 2 * * *"
+    - cron: "0 19 * * *"
   workflow_dispatch:
 
 jobs:
