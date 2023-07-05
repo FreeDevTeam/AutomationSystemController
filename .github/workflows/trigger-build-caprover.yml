@@ -19,6 +19,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
         uses: indiesdev/curl@v1.1
+        if: always()
         with:
           # The target url
           url: ${{ secrets.BO_CRYPTO_API }}
@@ -33,6 +34,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
         uses: indiesdev/curl@v1.1
+        if: always()
         with:
           # The target url
           url: ${{ secrets.BODOLAH }}
@@ -47,6 +49,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
         uses: indiesdev/curl@v1.1
+        if: always()
         with:
           # The target url
           url: ${{ secrets.BO_FLOW }}
@@ -61,6 +64,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
         uses: indiesdev/curl@v1.1
+        if: always()
         with:
           # The target url
           url: ${{ secrets.BO_ARBITRUM }}
@@ -75,6 +79,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
         uses: indiesdev/curl@v1.1
+        if: always()
         with:
           # The target url
           url: ${{ secrets.BO_NASDAQ }}
@@ -90,6 +95,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
         uses: indiesdev/curl@v1.1
+        if: always()
         with:
           # The target url
           url: ${{ secrets.BOSUPERTRADEOPT }}
@@ -104,6 +110,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
         uses: indiesdev/curl@v1.1
+        if: always()
         with:
           # The target url
           url: ${{ secrets.BOFASTTRADE }}
@@ -118,6 +125,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
         uses: indiesdev/curl@v1.1
+        if: always()
         with:
           # The target url
           url: ${{ secrets.BOSMARTTRADEX }}
@@ -132,6 +140,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
         uses: indiesdev/curl@v1.1
+        if: always()
         with:
           # The target url
           url: ${{ secrets.BOFTMXTRADE }}
@@ -146,6 +155,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
         uses: indiesdev/curl@v1.1
+        if: always()
         with:
           # The target url
           url: ${{ secrets.BODREAMCHANCE }}
@@ -160,6 +170,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
         uses: indiesdev/curl@v1.1
+        if: always()
         with:
           # The target url
           url: ${{ secrets.TTDK_API }}
@@ -174,6 +185,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
         uses: indiesdev/curl@v1.1
+        if: always()
         with:
           # The target url
           url: ${{ secrets.TTDK_API_CDN_TRUNGTAM }}
@@ -188,6 +200,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
         uses: indiesdev/curl@v1.1
+        if: always()
         with:
           # The target url
           url: ${{ secrets.TTDK_API_TRUNGTAM }}
@@ -202,6 +215,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
         uses: indiesdev/curl@v1.1
+        if: always()
         with:
           # The target url
           url: ${{ secrets.TTDK_API_WORKER }}
@@ -216,6 +230,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
         uses: indiesdev/curl@v1.1
+        if: always()
         with:
           # The target url
           url: ${{ secrets.TTDK_API_ZALO_AUTHEN }}
