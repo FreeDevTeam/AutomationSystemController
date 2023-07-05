@@ -25,6 +25,7 @@ jobs:
           # The request method, basically one of GET, POST, PUT, PATCH
           method: "POST" # optional, default is GET
           # List of status codes to be accepted, else it is considerred to be failed
+          timeout: 3000
       - name: Restart BoDolah
         run: |
           echo "BoDolah"
@@ -38,6 +39,7 @@ jobs:
           # The request method, basically one of GET, POST, PUT, PATCH
           method: "POST" # optional, default is GET
           # List of status codes to be accepted, else it is considerred to be failed
+          timeout: 3000
       - name: Restart BO_FLOW
         run: |
           echo "BO_FLOW"
@@ -51,6 +53,7 @@ jobs:
           # The request method, basically one of GET, POST, PUT, PATCH
           method: "POST" # optional, default is GET
           # List of status codes to be accepted, else it is considerred to be failed
+          timeout: 3000
       - name: Restart BO_ARBITRUM
         run: |
           echo "BO_ARBITRUM"
@@ -64,6 +67,7 @@ jobs:
           # The request method, basically one of GET, POST, PUT, PATCH
           method: "POST" # optional, default is GET
           # List of status codes to be accepted, else it is considerred to be failed
+          timeout: 3000
       - name: Restart BO_NASDAQ
         run: |
           echo "BO_NASDAQ"
@@ -77,6 +81,7 @@ jobs:
           # The request method, basically one of GET, POST, PUT, PATCH
           method: "POST" # optional, default is GET
           # List of status codes to be accepted, else it is considerred to be failed
+          timeout: 3000
           
       - name: Restart SuperTrade OPT
         run: |
@@ -91,6 +96,7 @@ jobs:
           # The request method, basically one of GET, POST, PUT, PATCH
           method: "POST" # optional, default is GET
           # List of status codes to be accepted, else it is considerred to be failed
+          timeout: 3000
       - name: Restart FastTrade
         run: |
           echo "FastTrade"
@@ -104,6 +110,7 @@ jobs:
           # The request method, basically one of GET, POST, PUT, PATCH
           method: "POST" # optional, default is GET
           # List of status codes to be accepted, else it is considerred to be failed
+          timeout: 3000
       - name: Restart SmartTradeX
         run: |
           echo "SmartTradeX"
@@ -117,6 +124,7 @@ jobs:
           # The request method, basically one of GET, POST, PUT, PATCH
           method: "POST" # optional, default is GET
           # List of status codes to be accepted, else it is considerred to be failed
+          timeout: 3000
       - name: Restart FTMXTrade
         run: |
           echo "FTMXTrade"
@@ -130,6 +138,7 @@ jobs:
           # The request method, basically one of GET, POST, PUT, PATCH
           method: "POST" # optional, default is GET
           # List of status codes to be accepted, else it is considerred to be failed
+          timeout: 3000
       - name: Restart DreamChance
         run: |
           echo "DreamChance"
@@ -143,6 +152,7 @@ jobs:
           # The request method, basically one of GET, POST, PUT, PATCH
           method: "POST" # optional, default is GET
           # List of status codes to be accepted, else it is considerred to be failed
+          timeout: 3000
       - name: Restart TTDK_API
         run: |
           echo "TTDK_API"
@@ -156,6 +166,7 @@ jobs:
           # The request method, basically one of GET, POST, PUT, PATCH
           method: "POST" # optional, default is GET
           # List of status codes to be accepted, else it is considerred to be failed
+          timeout: 3000
       - name: Restart TTDK_API_CDN_TRUNGTAM
         run: |
           echo "TTDK_API_CDN_TRUNGTAM"
@@ -169,6 +180,7 @@ jobs:
           # The request method, basically one of GET, POST, PUT, PATCH
           method: "POST" # optional, default is GET
           # List of status codes to be accepted, else it is considerred to be failed
+          timeout: 3000
       - name: Restart TTDK_API_TRUNGTAM
         run: |
           echo "TTDK_API_TRUNGTAM"
@@ -182,6 +194,7 @@ jobs:
           # The request method, basically one of GET, POST, PUT, PATCH
           method: "POST" # optional, default is GET
           # List of status codes to be accepted, else it is considerred to be failed
+          timeout: 3000
       - name: Restart TTDK_API_WORKER
         run: |
           echo "TTDK_API_WORKER"
@@ -195,6 +208,7 @@ jobs:
           # The request method, basically one of GET, POST, PUT, PATCH
           method: "POST" # optional, default is GET
           # List of status codes to be accepted, else it is considerred to be failed
+          timeout: 3000
       - name: Restart TTDK_API_ZALO_AUTHEN
         run: |
           echo "TTDK_API_ZALO_AUTHEN"
@@ -208,6 +222,7 @@ jobs:
           # The request method, basically one of GET, POST, PUT, PATCH
           method: "POST" # optional, default is GET
           # List of status codes to be accepted, else it is considerred to be failed
+          timeout: 3000
       - name: Telegram sender
         uses: robotomize/notify-telegram@v0.2.4
         if: always()
