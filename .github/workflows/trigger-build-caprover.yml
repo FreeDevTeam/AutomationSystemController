@@ -28,162 +28,25 @@ jobs:
           method: "POST" # optional, default is GET
           # List of status codes to be accepted, else it is considerred to be failed
           timeout: 3000
-      - name: Restart BOFLOWTEAM
-        run: |
-          echo "BOFLOWTEAM"
-      - name: cURL AxiosJS
-        # You may pin to the exact commit or the version.
-        # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
-        uses: indiesdev/curl@v1.1
-        if: always()
-        id: reset_BOFLOWTEAM
-        with:
-          # The target url
-          url: ${{ secrets.BOFLOWTEAM }}
-          # The request method, basically one of GET, POST, PUT, PATCH
-          method: "POST" # optional, default is GET
-          # List of status codes to be accepted, else it is considerred to be failed
-          timeout: 3000
-      - name: Restart BoDolah
-        run: |
-          echo "BoDolah"
-      - name: cURL AxiosJS
-        # You may pin to the exact commit or the version.
-        # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
-        uses: indiesdev/curl@v1.1
-        if: always()
-        with:
-          # The target url
-          url: ${{ secrets.BODOLAH }}
-          # The request method, basically one of GET, POST, PUT, PATCH
-          method: "POST" # optional, default is GET
-          # List of status codes to be accepted, else it is considerred to be failed
-          timeout: 3000
-      - name: Restart BO_ARBITRUM
-        run: |
-          echo "BO_ARBITRUM"
-      - name: cURL AxiosJS
-        # You may pin to the exact commit or the version.
-        # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
-        uses: indiesdev/curl@v1.1
-        if: always()
-        with:
-          # The target url
-          url: ${{ secrets.BO_ARBITRUM }}
-          # The request method, basically one of GET, POST, PUT, PATCH
-          method: "POST" # optional, default is GET
-          # List of status codes to be accepted, else it is considerred to be failed
-          timeout: 3000
-      - name: Restart BO_NASDAQ
-        run: |
-          echo "BO_NASDAQ"
-      - name: cURL AxiosJS
-        # You may pin to the exact commit or the version.
-        # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
-        uses: indiesdev/curl@v1.1
-        if: always()
-        with:
-          # The target url
-          url: ${{ secrets.BO_NASDAQ }}
-          # The request method, basically one of GET, POST, PUT, PATCH
-          method: "POST" # optional, default is GET
-          # List of status codes to be accepted, else it is considerred to be failed
-          timeout: 3000
-          
-      - name: Restart SuperTrade OPT
-        run: |
-          echo "Super Trade OPT"
-      - name: cURL AxiosJS
-        # You may pin to the exact commit or the version.
-        # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
-        uses: indiesdev/curl@v1.1
-        if: always()
-        with:
-          # The target url
-          url: ${{ secrets.BOSUPERTRADEOPT }}
-          # The request method, basically one of GET, POST, PUT, PATCH
-          method: "POST" # optional, default is GET
-          # List of status codes to be accepted, else it is considerred to be failed
-          timeout: 3000
-      - name: Restart FastTrade
-        run: |
-          echo "FastTrade"
-      - name: cURL AxiosJS
-        # You may pin to the exact commit or the version.
-        # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
-        uses: indiesdev/curl@v1.1
-        if: always()
-        with:
-          # The target url
-          url: ${{ secrets.BOFASTTRADE }}
-          # The request method, basically one of GET, POST, PUT, PATCH
-          method: "POST" # optional, default is GET
-          # List of status codes to be accepted, else it is considerred to be failed
-          timeout: 3000
-      
-      - name: Restart TTDK_API
-        run: |
-          echo "TTDK_API"
-      - name: cURL AxiosJS
-        # You may pin to the exact commit or the version.
-        # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
-        uses: indiesdev/curl@v1.1
-        if: always()
-        with:
-          # The target url
-          url: ${{ secrets.TTDK_API }}
-          # The request method, basically one of GET, POST, PUT, PATCH
-          method: "POST" # optional, default is GET
-          # List of status codes to be accepted, else it is considerred to be failed
-          timeout: 3000
-      - name: Restart TTDK_API_CDN_TRUNGTAM
-        run: |
-          echo "TTDK_API_CDN_TRUNGTAM"
-      - name: cURL AxiosJS
-        # You may pin to the exact commit or the version.
-        # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
-        uses: indiesdev/curl@v1.1
-        if: always()
-        with:
-          # The target url
-          url: ${{ secrets.TTDK_API_CDN_TRUNGTAM }}
-          # The request method, basically one of GET, POST, PUT, PATCH
-          method: "POST" # optional, default is GET
-          # List of status codes to be accepted, else it is considerred to be failed
-          timeout: 3000
-      - name: Restart TTDK_API_TRUNGTAM
-        run: |
-          echo "TTDK_API_TRUNGTAM"
-      - name: cURL AxiosJS
-        # You may pin to the exact commit or the version.
-        # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
-        uses: indiesdev/curl@v1.1
-        if: always()
-        with:
-          # The target url
-          url: ${{ secrets.TTDK_API_TRUNGTAM }}
-          # The request method, basically one of GET, POST, PUT, PATCH
-          method: "POST" # optional, default is GET
-          # List of status codes to be accepted, else it is considerred to be failed
-          timeout: 3000
-      - name: Restart TTDK_API_WORKER
-        run: |
-          echo "TTDK_API_WORKER"
-      - name: cURL AxiosJS
-        # You may pin to the exact commit or the version.
-        # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
-        uses: indiesdev/curl@v1.1
-        if: always()
-        with:
-          # The target url
-          url: ${{ secrets.TTDK_API_WORKER }}
-          # The request method, basically one of GET, POST, PUT, PATCH
-          method: "POST" # optional, default is GET
-          # List of status codes to be accepted, else it is considerred to be failed
-          timeout: 3000
-      # - name: Restart TTDK_API_ZALO_AUTHEN
+      # - name: Restart BOFLOWTEAM
       #   run: |
-      #     echo "TTDK_API_ZALO_AUTHEN"
+      #     echo "BOFLOWTEAM"
+      # - name: cURL AxiosJS
+      #   # You may pin to the exact commit or the version.
+      #   # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
+      #   uses: indiesdev/curl@v1.1
+      #   if: always()
+      #   id: reset_BOFLOWTEAM
+      #   with:
+      #     # The target url
+      #     url: ${{ secrets.BOFLOWTEAM }}
+      #     # The request method, basically one of GET, POST, PUT, PATCH
+      #     method: "POST" # optional, default is GET
+      #     # List of status codes to be accepted, else it is considerred to be failed
+      #     timeout: 3000
+      # - name: Restart BoDolah
+      #   run: |
+      #     echo "BoDolah"
       # - name: cURL AxiosJS
       #   # You may pin to the exact commit or the version.
       #   # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
@@ -191,11 +54,148 @@ jobs:
       #   if: always()
       #   with:
       #     # The target url
-      #     url: ${{ secrets.TTDK_API_ZALO_AUTHEN }}
+      #     url: ${{ secrets.BODOLAH }}
       #     # The request method, basically one of GET, POST, PUT, PATCH
       #     method: "POST" # optional, default is GET
       #     # List of status codes to be accepted, else it is considerred to be failed
       #     timeout: 3000
+      # - name: Restart BO_ARBITRUM
+      #   run: |
+      #     echo "BO_ARBITRUM"
+      # - name: cURL AxiosJS
+      #   # You may pin to the exact commit or the version.
+      #   # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
+      #   uses: indiesdev/curl@v1.1
+      #   if: always()
+      #   with:
+      #     # The target url
+      #     url: ${{ secrets.BO_ARBITRUM }}
+      #     # The request method, basically one of GET, POST, PUT, PATCH
+      #     method: "POST" # optional, default is GET
+      #     # List of status codes to be accepted, else it is considerred to be failed
+      #     timeout: 3000
+      # - name: Restart BO_NASDAQ
+      #   run: |
+      #     echo "BO_NASDAQ"
+      # - name: cURL AxiosJS
+      #   # You may pin to the exact commit or the version.
+      #   # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
+      #   uses: indiesdev/curl@v1.1
+      #   if: always()
+      #   with:
+      #     # The target url
+      #     url: ${{ secrets.BO_NASDAQ }}
+      #     # The request method, basically one of GET, POST, PUT, PATCH
+      #     method: "POST" # optional, default is GET
+      #     # List of status codes to be accepted, else it is considerred to be failed
+      #     timeout: 3000
+          
+      # - name: Restart SuperTrade OPT
+      #   run: |
+      #     echo "Super Trade OPT"
+      # - name: cURL AxiosJS
+      #   # You may pin to the exact commit or the version.
+      #   # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
+      #   uses: indiesdev/curl@v1.1
+      #   if: always()
+      #   with:
+      #     # The target url
+      #     url: ${{ secrets.BOSUPERTRADEOPT }}
+      #     # The request method, basically one of GET, POST, PUT, PATCH
+      #     method: "POST" # optional, default is GET
+      #     # List of status codes to be accepted, else it is considerred to be failed
+      #     timeout: 3000
+      # - name: Restart FastTrade
+      #   run: |
+      #     echo "FastTrade"
+      # - name: cURL AxiosJS
+      #   # You may pin to the exact commit or the version.
+      #   # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
+      #   uses: indiesdev/curl@v1.1
+      #   if: always()
+      #   with:
+      #     # The target url
+      #     url: ${{ secrets.BOFASTTRADE }}
+      #     # The request method, basically one of GET, POST, PUT, PATCH
+      #     method: "POST" # optional, default is GET
+      #     # List of status codes to be accepted, else it is considerred to be failed
+      #     timeout: 3000
+      
+      # - name: Restart TTDK_API
+      #   run: |
+      #     echo "TTDK_API"
+      # - name: cURL AxiosJS
+      #   # You may pin to the exact commit or the version.
+      #   # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
+      #   uses: indiesdev/curl@v1.1
+      #   if: always()
+      #   with:
+      #     # The target url
+      #     url: ${{ secrets.TTDK_API }}
+      #     # The request method, basically one of GET, POST, PUT, PATCH
+      #     method: "POST" # optional, default is GET
+      #     # List of status codes to be accepted, else it is considerred to be failed
+      #     timeout: 3000
+      # - name: Restart TTDK_API_CDN_TRUNGTAM
+      #   run: |
+      #     echo "TTDK_API_CDN_TRUNGTAM"
+      # - name: cURL AxiosJS
+      #   # You may pin to the exact commit or the version.
+      #   # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
+      #   uses: indiesdev/curl@v1.1
+      #   if: always()
+      #   with:
+      #     # The target url
+      #     url: ${{ secrets.TTDK_API_CDN_TRUNGTAM }}
+      #     # The request method, basically one of GET, POST, PUT, PATCH
+      #     method: "POST" # optional, default is GET
+      #     # List of status codes to be accepted, else it is considerred to be failed
+      #     timeout: 3000
+      # - name: Restart TTDK_API_TRUNGTAM
+      #   run: |
+      #     echo "TTDK_API_TRUNGTAM"
+      # - name: cURL AxiosJS
+      #   # You may pin to the exact commit or the version.
+      #   # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
+      #   uses: indiesdev/curl@v1.1
+      #   if: always()
+      #   with:
+      #     # The target url
+      #     url: ${{ secrets.TTDK_API_TRUNGTAM }}
+      #     # The request method, basically one of GET, POST, PUT, PATCH
+      #     method: "POST" # optional, default is GET
+      #     # List of status codes to be accepted, else it is considerred to be failed
+      #     timeout: 3000
+      # - name: Restart TTDK_API_WORKER
+      #   run: |
+      #     echo "TTDK_API_WORKER"
+      # - name: cURL AxiosJS
+      #   # You may pin to the exact commit or the version.
+      #   # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
+      #   uses: indiesdev/curl@v1.1
+      #   if: always()
+      #   with:
+      #     # The target url
+      #     url: ${{ secrets.TTDK_API_WORKER }}
+      #     # The request method, basically one of GET, POST, PUT, PATCH
+      #     method: "POST" # optional, default is GET
+      #     # List of status codes to be accepted, else it is considerred to be failed
+      #     timeout: 3000
+      # # - name: Restart TTDK_API_ZALO_AUTHEN
+      # #   run: |
+      # #     echo "TTDK_API_ZALO_AUTHEN"
+      # # - name: cURL AxiosJS
+      # #   # You may pin to the exact commit or the version.
+      # #   # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
+      # #   uses: indiesdev/curl@v1.1
+      # #   if: always()
+      # #   with:
+      # #     # The target url
+      # #     url: ${{ secrets.TTDK_API_ZALO_AUTHEN }}
+      # #     # The request method, basically one of GET, POST, PUT, PATCH
+      # #     method: "POST" # optional, default is GET
+      # #     # List of status codes to be accepted, else it is considerred to be failed
+      # #     timeout: 3000
       - name: Telegram sender
         uses: robotomize/notify-telegram@v0.2.4
         if: always()
@@ -203,7 +203,9 @@ jobs:
           chat: "@BuildNotify" # user id or channel name secret
           token: "5665305274:AAFlhbcpNijafxo9sCNqO2CBuojoRNP5ZFc" # token secret
           status: ${{ job.status }} # do not modify this line
-          message: ${{steps.reset_BOOKEDA.conclusion}} # custom message
+          message: |
+            reset BOOKEDA ${{steps.reset_BOOKEDA.conclusion}} # custom message
+            reset BOOKEDA ${{steps.reset_BOOKEDA.conclusion}} # custom message
           
           
          
