@@ -8,8 +8,8 @@ on:
         default: true
 
 jobs:
-  restart-bo-dolah:
-    name: restart-bo-dolah
+  reset-all-services:
+    name: reset-all-services
     runs-on: "ubuntu-20.04"
     steps:
       - name: Restart BOOKEDA Service
@@ -20,6 +20,7 @@ jobs:
         # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
         uses: indiesdev/curl@v1.1
         if: always()
+        id: reset_BOOKEDA
         with:
           # The target url
           url: ${{ secrets.BOOKEDA }}
@@ -35,6 +36,7 @@ jobs:
         # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
         uses: indiesdev/curl@v1.1
         if: always()
+        id: reset_BOFLOWTEAM
         with:
           # The target url
           url: ${{ secrets.BOFLOWTEAM }}
@@ -201,7 +203,8 @@ jobs:
           chat: "@BuildNotify" # user id or channel name secret
           token: "5665305274:AAFlhbcpNijafxo9sCNqO2CBuojoRNP5ZFc" # token secret
           status: ${{ job.status }} # do not modify this line
-          message: "Reset BO Services" # custom message
+          message: ${{steps.reset_BOOKEDA.conclusion}} # custom message
+          
           
          
           
