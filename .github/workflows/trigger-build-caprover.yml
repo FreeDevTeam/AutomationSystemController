@@ -102,6 +102,7 @@ jobs:
         # uses: indiesdev/curl@5f733a4ab67799ec174b9b9b3f8d78100ae084e8
         uses: indiesdev/curl@v1.1
         if: always()
+        id: reset_TTDK_API_TRUNGTAM
         with:
           # The target url
           url: ${{ secrets.TTDK_API_TRUNGTAM }}
@@ -134,12 +135,14 @@ jobs:
           token: "5665305274:AAFlhbcpNijafxo9sCNqO2CBuojoRNP5ZFc" # token secret
           status: ${{ job.status }} # do not modify this line
           message: |
-            Services result summary:
-            reset_BOOKEDA ${{steps.reset_BOOKEDA.conclusion}}
-            reset_BO_NASDAQ ${{steps.reset_BO_NASDAQ.conclusion}}
-            reset_TTDK_API ${{steps.reset_TTDK_API.conclusion}}
-            reset_TTDK_API_CDN_TRUNGTAM ${{steps.reset_TTDK_API_CDN_TRUNGTAM.conclusion}}
-            reset_TTDK_TTDK_API_WORKER ${{steps.reset_TTDK_TTDK_API_WORKER.conclusion}}
+            Services result summary: |
+            reset_BOOKEDA ${{steps.reset_BOOKEDA.conclusion}} |
+            reset_BO_NASDAQ ${{steps.reset_BO_NASDAQ.conclusion}} |
+            reset_TTDK_API ${{steps.reset_TTDK_API.conclusion}} |
+            reset_TTDK_API_CDN_TRUNGTAM ${{steps.reset_TTDK_API_CDN_TRUNGTAM.conclusion}} |
+            reset_TTDK_TTDK_API_WORKER ${{steps.reset_TTDK_TTDK_API_WORKER.conclusion}} |
+            reset_TTDK_API_TRUNGTAM ${{steps.reset_TTDK_API_TRUNGTAM.conclusion}}
+            
           
           
          
